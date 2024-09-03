@@ -1,3 +1,56 @@
 #root {
-    .account-page {}
+    .account-page {
+        height: 100vh;
+
+        &>.account-section {
+            height: 100%;
+
+            &>.account-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+
+                &>.title-wrapper {
+                    &>.title {
+                        font-size: 28px;
+                        font-weight: 700;
+                        color: white
+                    }
+                }
+
+                &>.input-wrapper {
+                    margin-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 15px;
+
+                    &>.input {
+                        width: 326px;
+                        height: 50px;
+                        border-radius: 5px;
+                        border: none;
+                        padding: 8px;
+                        box-sizing: border-box;
+                    }
+
+                    &>.account-btn {
+                        border: none;
+                        width: 326px;
+                        height: 44px;
+                        border-radius: 5px;
+                        margin: 0 auto;
+                        font-size: 17px;
+                        font-weight: 400;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.7);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
