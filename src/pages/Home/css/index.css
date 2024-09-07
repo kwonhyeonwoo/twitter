@@ -1,0 +1,6 @@
+#root .home-page {
+  width: 100%;
+}
+#root .home-page > .write-tweet-section {
+  width: 100%;
+}

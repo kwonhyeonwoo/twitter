@@ -107,6 +107,14 @@ body {
     background-color: rgba(246, 249, 250, 1);
 }
 
+.main-wrapper {
+    max-width: 728px;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    padding-top: 60px;
+}
+
 .card {
     padding: 20px;
     border: 1px solid rgba(231, 236, 241, 1);
@@ -135,6 +143,10 @@ body {
 
 
     }
+}
+
+button {
+    cursor: pointer;
 }
 
 ol,

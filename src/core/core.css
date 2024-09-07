@@ -107,6 +107,16 @@ body {
   background-color: rgb(246, 249, 250);
 }
 
+.main-wrapper {
+  max-width: 728px;
+  margin: 0 auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 60px;
+}
+
 .card {
   padding: 20px;
   border: 1px solid rgb(231, 236, 241);
@@ -135,6 +145,10 @@ body {
 }
 .card > .link-wrapper a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 ol,

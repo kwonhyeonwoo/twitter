@@ -1,0 +1,32 @@
+#root {
+    .layout {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        &>.circle {
+            width: 50px;
+            height: 50px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid gray;
+            cursor: pointer;
+
+            svg {
+                font-size: 19px;
+            }
+        }
+
+        &>.circle:nth-child(3) {
+            border: 1px solid red;
+
+            svg {
+                color: red;
+            }
+        }
+    }
+}

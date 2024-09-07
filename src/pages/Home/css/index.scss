@@ -1,3 +1,9 @@
 #root {
-    .home-page {}
+    .home-page {
+        width: 100%;
+
+        &>.write-tweet-section {
+            width: 100%;
+        }
+    }
 }

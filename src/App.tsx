@@ -6,32 +6,36 @@ import LoginContainer from './pages/Login/container/LoginContainer';
 import HeaderContainer from './components/common/Header/container/HeaderContainer';
 import { auth } from "./config/firebase";
 import "./core/core.css";
+import LayoutContainer from './components/Layout/container/LayoutContainer';
 function App() {
-  const [isLogin, setIsLogin] = useState<boolean>(true);
+  const [isLogin, setIsLogin] = useState<boolean>(false);
   const init = async () => {
     await auth.authStateReady();
-    setIsLogin(false)
+    setIsLogin(true)
   };
 
   useEffect(() => {
     init();
   }, []);
-
+  console.log('first', isLogin)
   return (
     <BrowserRouter>
-      <HeaderContainer />
       {isLogin ? (
-        <div>
-          Loading...
+        <div className='main-wrapper'>
+          <LayoutContainer />
+          <Routes>
+            <Route path='/' element={<HomeContainer />} />
+          </Routes>
         </div>
 
       ) : (
         <Routes>
-          <Route path='/' element={<HomeContainer />} />
           <Route path='/account' element={<AccountContainer />} />
           <Route path='/login' element={<LoginContainer />} />
         </Routes>
+
       )}
+
     </BrowserRouter>
   );
 }
