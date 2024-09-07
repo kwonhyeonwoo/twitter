@@ -104,7 +104,37 @@ section {
 
 body {
     line-height: 1;
-    background-color: black;
+    background-color: rgba(246, 249, 250, 1);
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid rgba(231, 236, 241, 1);
+    border-radius: 7px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    background-color: white;
+
+    &>.card-title {
+        color: black;
+        font-size: 29px;
+        font-weight: 700;
+        text-align: center;
+        margin: 12px 0px;
+    }
+
+    &>.link-wrapper {
+        margin: 0 auto;
+        margin-top: 12px;
+
+        a {
+            text-decoration: none
+        }
+
+
+    }
 }
 
 ol,

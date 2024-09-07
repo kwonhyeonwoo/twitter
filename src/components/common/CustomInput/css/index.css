@@ -1,0 +1,11 @@
+#root .custom-input {
+  width: 326px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: rgb(245, 248, 250);
+  border: 1px solid rgb(237, 241, 245);
+}

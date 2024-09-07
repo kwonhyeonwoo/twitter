@@ -1,10 +1,15 @@
 import React from 'react'
 import "./css/index.css";
-const Home = () => {
+
+type Props = {
+    LogOut: () => void;
+}
+
+const Home = ({ LogOut }: Props) => {
     return (
         <main className='home-page'>
             <div>
-                home
+                <button onClick={LogOut}>logout</button>
             </div>
         </main>
     )

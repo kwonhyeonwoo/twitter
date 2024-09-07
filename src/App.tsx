@@ -15,7 +15,8 @@ function App() {
 
   useEffect(() => {
     init();
-  }, [])
+  }, []);
+
   return (
     <BrowserRouter>
       <HeaderContainer />
